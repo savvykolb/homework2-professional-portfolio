@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --font: Monaco, Verdana, Geneva, Tahoma, sans-serif
 }
 
@@ -17,8 +17,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #13293d;
-    color: #fff;
+    background-color: #ececec;
+    color: #5DA2D5;
 }
 
 h1 {
@@ -34,29 +34,12 @@ nav ul {
 }
 
 nav a {
-    color: #b9C6ae;
+    color: #F78888;
     font-weight: bold;
     text-decoration: underline;
 }
 
-section {
-    overflow:auto
-}
-#headerimage {
-    background: url("");
-    width: 1024px;
-    height: 500px;
-    background-repeat: no-repeat;
-    display: block;
-    position: relative;
-    background-position:
-}  
- {
+.main-header {
+    display
+} */
 
-  background-image: 
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: header;
-  position: relative;
-}
