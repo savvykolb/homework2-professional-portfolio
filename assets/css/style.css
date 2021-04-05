@@ -1,0 +1,62 @@
+:root {
+    --font: Monaco, Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+    color: #fff;
+}
+
+h1 {
+    margin: 2%;
+    font-size: 200%;
+    font-family: var(--font);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+nav a {
+    color: #b9C6ae;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+section {
+    overflow:auto
+}
+#headerimage {
+    background: url("");
+    width: 1024px;
+    height: 500px;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    background-position:
+}  
+ {
+
+  background-image: 
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: header;
+  position: relative;
+}
