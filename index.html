@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S. Kolb Portfolio</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -14,68 +14,92 @@
         <nav>
             <ul>
             <!-- I will need to insert real links here to move down the page -->
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="#">Resume</a></li>
+                <a href="#">About Me</a>
+                <a href="#">Work</a>
+                <a href="#">Contact Me</a>
+                <a href="#" download>Resume</a>
             <!-- I will need to insert real links here to move down the page -->
             </ul>
         </nav>
     </header>
-    <!-- I need to insert an image header here - not sure how to do this. -->
+    <!-- Image Subheader - work in progress -->
+    <header class="subheader">
+        <div><img src="#insert-image" alt="Savannah Kolb"></div>
+        <h2 id="subheader-words">Soon to be Developer</h2>
+    </header>
     <main>
+        <!-- About Me -->
         <section>
-            <header class="main-header">
-                <h2>About Me</h2>
-            </header>
-            <div class="main-paragraph">
-                <p>My name is Savannah Kolb. I am a mom, wife, and 7th grade teacher currently trying to pursue a career in web development. I am a student enrolled in the UNC-Chapel Hill Coding Bootcamp. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vel deserunt, voluptatibus nesciunt suscipit vero incidunt placeat molestias exercitationem enim eligendi numquam earum blanditiis modi accusantium inventore ipsa veritatis quo. </p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo amet pariatur, blanditiis iusto provident necessitatibus hic ullam aut ut minus voluptates doloremque ducimus possimus vero id rerum sequi. Recusandae.</p>
+            <aside class="aside-header" id="about-me">
+                <h3>About Me</h3>
+            </aside>
+            <!-- About Me Paragraph Content  -->
+            <div class="main-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vel deserunt, voluptatibus nesciunt suscipit vero incidunt placeat molestias exercitationem enim eligendi numquam earum blanditiis modi accusantium inventore ipsa veritatis quo. </p><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo amet pariatur, blanditiis iusto provident necessitatibus hic ullam aut ut minus voluptates doloremque ducimus possimus vero id rerum sequi. Recusandae</p>
             </div>
         </section>
-        <section>
-            <header class="main-header">
-                <h2>Work</h2>
-            </header>
-            <div class="surf-report">
+        <!-- Work Section with flex box elements -->
+        <section class="flexbox-section">
+            <aside class="aside-header" id="work">
+                <h3>Work</h3>
+            </aside>
+            <!-- Box 1 -->
+            <section class="flexbox-content">
+                <div class="flexbox-description">
+                    <h4>Surf Report</h4>
+                    <p>MERN Stack</p>
+                </div>
                 <img src="#" alt="cool surf picture">
-                <h3>Surf Report</h3>
-                <p>MERN Stack</p>
-            </div>
-            <div class="led-wall">
-                <img src="#" alt="cool LED Wall">
-                <h3>LED Wall</h3>
-                <p>Node/loT</p>
-            </div>
-            <div class="calculator">
-                <img src="#" alt="cool calculator picture">
-                <h3>Calculator</h3>
-                <p>React/JavaScript/CSS</p>
-            </div>
-            <div class="pastel-puzzle">
-                <img src="#" alt="cool pastel wall">
-                <h3>Pastel Puzzle</h3>
-                <p>MERN Stack</p>
-            </div>
-            <div class="run-buddy">
-                <img src="#" alt="cool run buddy background">
-                <h3>Run Buddy</h3>
-                <p>HTML/CSS</p>
-            </div>
+            </section>
+            <!-- Box 2 -->
+            <section class="flexbox-content">
+                <div class="flexbox-description">
+                    <h4>LED Wall</h4>
+                    <p>Node/loT</p>
+                </div>
+                <img src="#" alt="led wall">
+            </section>
+            <!-- Box 3 -->
+            <section class="flexbox-content">
+                <div class="flexbox-description">
+                    <h4>Calculator</h4>
+                    <p>React/JavaScript/CSS</p>
+                </div>
+                <img src="#" alt="Calculator">
+            </section>
+            <!-- Box 4 -->
+            <section class="flexbox-content">
+                <div class="flexbox-description">
+                    <h4>Pastel Puzzles</h4>
+                    <p>MERN Stack</p>
+                </div>
+                <img src="#" alt="Pastel Wall">
+            </section>
+            <!-- Box 5 -->
+            <section class="flexbox-content">
+                <div class="flexbox-description">
+                    <h4>Run Buddy</h4>
+                    <p>HTML/CSS</p>
+                </div>
+                <img src="#" alt="Run Buddy Background">
+            </section>
         </section>
+        <!-- Contact Me  -->
         <section>
-            <header class="main-header">
-                <h2>Contact Me</h2>
-            </header>
-            <div class="main-nav">
+            <aside class="aside-header">
+                <h3>Contact Me</h3>
+            </aside>
+            <!-- Contact Me Section  -->
+            <div class="contact-nav">
                 <ul>
                     <!-- I will need to insert real links here to move down the page -->
-                        <li><a href="#">336-707-0007</a></li>
-                        <li><a href="#">SavvyKolb@website.com</a></li>
-                        <li><a href="#">Git Hub</a></li>
-                        <li><a href="#">Linked In</a></li>
+                    <a href="#">336-707-0007</a>
+                    <a href="#">SavvyKolb@website.com</a>
+                    <a href="#">Git Hub</a>
+                    <a href="#">Linked In</a>
                     <!-- I will need to insert real links here to move down the page -->
-                    </ul>
+                </ul>
             </div>
         </section>
     </main>
