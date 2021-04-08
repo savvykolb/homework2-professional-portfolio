@@ -1,5 +1,9 @@
 :root {
-    --font: Monaco, Verdana, Geneva, Tahoma, sans-serif
+    --font: Monaco, Verdana, Geneva, Tahoma, sans-serif;
+    --font2: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    --dark-blue: #194b74;
+    --grey: #F0EBF4;
+    --hot-pink:#E64398;
 }
 
 * {
@@ -15,6 +19,8 @@ body {
     font-size: 16px;
     font-family: var(--font);
     box-sizing: border-box;
+    background-color: var(--grey);
+    color: var(--dark-blue);
 }
 
 /* Why is my background color not extending to the edge? */
@@ -23,18 +29,25 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #194b74;
-    color: #194b74;
+    background-color: var(--dark-blue);
+    color: var(dark-blue);
 }
 
 h1 {
     margin: 2%;
     font-size: 200%;
     font-family: var(--font);
+    text-align: center;
+}
+
+h2 {
+    color: var(--hot-pink);
+    font-size: 16px;
+    text-align: center;
 }
 
 #name-box {
-    background-color:#F0EBF4;
+    background-color: var(--grey);
     font-size: 30px;
     padding: 3px 15px 3px 10px;
     border-radius: 20px 20px 20px 20px;
@@ -48,41 +61,94 @@ nav ul {
 }
 
 nav a {
-    color: #F0EBF4;
+    color: var(--grey);
     font-weight: bold;
+    font-size: 12px;
 }
 
-/* The image is now distorted  */
 .subheader img {
-    display: flex;
-    /* background-image: url("..assets/images/Screen Shot 2021-04-05 at 9.36.29 PM.png"); */
-    width: 100%;
-    height: 150px;
-    background: url('..assets/images/Screen Shot 2021-04-05 at 9.36.29 PM.png');
-    background-size: cover;
-    /* background-position: center;
-    position: relative; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Not sure how to get aside-header and main-content in same line  
-also not sure how to get them to flex with page size changes 
-Currently, padding left changes depending on width of page 
-- maybe display flex? maybe justify -content?*/
+#header-img {
+    height: 100px;
+    overflow: hidden;
+}
+
+/* I cannot get the header on picture  */
+#subheader-box {
+    background-color: var(--grey);
+    font-size: 16px;
+    /* padding: 3px 15px 3px 10px; */
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* Still not sure how to get <p> inline with Header  */
 .aside-header {
-    width: 25%;
+    width: 20%;
     font-size: 24px;
     text-align: right;
-    padding-right: 18px;
-    border-right:2px solid #194b74;
+    border-right:2px solid var(--dark-blue);
+    padding-inline: 15px;
+}
+
+#about-me {   
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-bottom: 175px;
+    margin-top: 15px;
 }
 
 .main-content {
+    display:inline-block;
+    flex-wrap: wrap;
+    font-family: var(--font2);
     width: 70%;
-    padding-left: 85px;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    margin-top: -60%;
+   
+}
+/* .main-content:after {
+    content:"";
+    position:absolute;
+    left:-10px;
+    right:-20px;
+    top:-5px;
+    bottom:-5px;
+    border-right:2px solid;
+    border-right-width:4px;
+  } */
+
+/* This did not format properly  */
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-bottom: 175px;
+    margin-top: 15px;
+}
+
+#contact-me {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-bottom: 175px;
+        margin-top: 15px;
+    }
 }
 
 /* Not Working */
 .nav a:hover {
-    color:#F0EBF4;
+    color:var(--hot-pink);
     text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+    display:inline-block
+    }
