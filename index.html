@@ -22,78 +22,80 @@
             </ul>
         </nav>
     </header>
-    <!-- Image Subheader - work in progress -->
+    <!-- Image Subheader -->
     <header class="subheader">
         <div id="header-img">
-                <h2 id=subheader-box>Web Developer</h2>
+                <!-- <h2 id=subheader-box>Web Developer</h2> -->
             <img src="./assets/images/subheader-img2.png" alt="Savannah Kolb">
         </div>
     </header>
     <main>
         <!-- About Me -->
         <section>
-            <aside class="aside-header" id="about-me">
+            <aside>
                 <h3>About Me</h3>
+                <div>
+                    <img id="about-me-img" src="./assets/images/me.jpg" alt="Savannah Kolb Image">
+                </div>
             </aside>
-            <!-- About Me Paragraph Content  -->
             <div class="main-content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vel deserunt, voluptatibus nesciunt suscipit vero incidunt placeat molestias exercitationem enim eligendi numquam earum blanditiis modi accusantium inventore ipsa veritatis quo. </p><br>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo amet pariatur, blanditiis iusto provident necessitatibus hic ullam aut ut minus voluptates doloremque ducimus possimus vero id rerum sequi. Recusandae</p>
             </div>
         </section>
+
         <!-- Work Section with flex box elements -->
-        <section class="flexbox-section">
+        <section>
             <aside class="aside-header" id="work">
                 <h3>Work</h3>
             </aside>
-            <!-- Box 1 -->
-            <section class="main-content" id="big-box">
-                <section class="box-content" id="box1">
-                    <section class="sub-box">
-                        <div class="box-description">
-                            <h4>Surf Report</h4>
-                            <p>MERN Stack</p>
-                        </div> 
-                        <a href="#"><img src="./assets/images/Surf Report.jpg" alt="Surf Report Image by Zachary Ferguson"></a>
-                    </section> 
-                </section>
-            <!-- Box 2 -->
-            <section section class="box-content" id="box2">
-                <section class="sub-box">
-                    <div class="box-description">
-                        <h4>LED Wall</h4>
-                        <p>Node/loT</p>
-                    </div>
-                    <a href="#"><img src="./assets/images/LED-wall.jpg" alt="LED Wall Image by Solen Feyissa"></a>    
-                </section>  
-            <!-- Box 3 -->
-                <section class="sub-box">
-                    <div class="box-description">
-                        <h4>Calculator</h4>
-                        <p>React/JavaScript/CSS</p>
-                    </div>
-                    <a href="#"><img src="./assets/images/calculator.jpg" alt="Calculator Image by Amr Taha"></a>
-                </section>
-            <!-- Box 4 -->
-                <section class="sub-box">
-                    <div class="box-description">
-                        <h4>Pastel Puzzles</h4>
-                        <p>MERN Stack</p>
-                    </div>
-                    <a href="#"><img src="./assets/images/Pastel-wall.jpg" alt="Pastel Wall Image by Boris Misevic"></a>
-                </section>
-            <!-- Box 5 -->
-                <section class="sub-box">
-                    <div class="box-description">
-                        <h4>Run Buddy</h4>
-                        <p>HTML/CSS</p>
-                    </div>
-                    <a href="#"><img src="./assets/images/run-buddy.jpg" alt="Run Buddy Image by Kellen Riggin"></a>
-                </section>
-            </section>    
         </section>
+        
+        <!-- Box 1 -->
+        <section class="Container">
+            <section class="box-cards">
+                <div class="box-description">
+                    <h4>Surf Report</h4>
+                    <p>MERN Stack</p>
+                </div> 
+                <a href="#"><img src="./assets/images/Surf Report.jpg" alt="Surf Report Image by Zachary Ferguson"></a>
+            </section>
+
+            <!-- Box 2 -->
+            <section class="box-cards">
+                <div class="box-description">
+                    <h4>LED Wall</h4>
+                    <p>Node/loT</p>
+                </div>
+                <a href="#"><img src="./assets/images/LED-wall.jpg" alt="LED Wall Image by Solen Feyissa"></a>    
+            </section>  
+            <!-- Box 3 -->
+            <section class="box-cards">
+                <div class="box-description">
+                    <h4>Calculator</h4>
+                    <p>React/JavaScript/CSS</p>
+                </div>
+                <a href="#"><img src="./assets/images/calculator.jpg" alt="Calculator Image by Amr Taha"></a>
+            </section>
+            <!-- Box 4 -->
+            <section class="box-cards">
+                <div class="box-description">
+                    <h4>Pastel Puzzles</h4>
+                    <p>MERN Stack</p>
+                </div>
+                <a href="#"><img src="./assets/images/Pastel-wall.jpg" alt="Pastel Wall Image by Boris Misevic"></a>
+            </section>
+            <!-- Box 5 -->
+            <section class="box-cards">
+                <div class="box-description">
+                    <h4>Run Buddy</h4>
+                    <p>HTML/CSS</p>
+                </div>
+                <a href="#"><img src="./assets/images/run-buddy.jpg" alt="Run Buddy Image by Kellen Riggin"></a>
+            </section>   
+        </section>    
         <!-- Contact Me  -->
-        <section>
+        <section class="flexbox-section" id="contact-me">
             <aside class="aside-header">
                 <h3>Contact Me</h3>
             </aside>

@@ -23,14 +23,17 @@ body {
     color: var(--dark-blue);
 }
 
-/* Why is my background color not extending to the edge? */
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: var(--dark-blue);
-    color: var(dark-blue);
+main {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+aside{
+    flex: 1;
+    border-right:2px solid var(--dark-blue);
+    padding: 15px;
 }
 
 h1 {
@@ -46,12 +49,15 @@ h2 {
     text-align: center;
 }
 
-#name-box {
-    background-color: var(--grey);
-    font-size: 30px;
-    padding: 3px 15px 3px 10px;
-    border-radius: 20px 20px 20px 20px;
-
+h3 {
+    display: block;
+    font-size: 24px;
+    width: 30%;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -66,31 +72,61 @@ nav a {
     font-size: 12px;
 }
 
+/* Why is my background color not extending to the edge in mobile view? */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--dark-blue);
+    color: var(dark-blue);
+}
+
 .subheader img {
-  display: flex;
-  flex-wrap: wrap;
+  width:100%;
+}
+
+.main-content {
+    flex: 3;
+    display:inline-block;
+    flex-wrap: wrap;
+    font-family: var(--font2);
+    width: 70%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    margin-top: -60%;
+    
+}
+
+.container {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    margin-top: 2%;  
+}
+
+.box-cards {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.box-cards img {
+    width: 70%;
+    min-width: 400px;
+}
+
+.box-description {
+  padding: 20px;
+  background: var(--dark-blue);
+  color: var(--grey);
 }
 
 #header-img {
     height: 100px;
     overflow: hidden;
-}
-
-/* I cannot get the header on picture  */
-#subheader-box {
-    background-color: var(--grey);
-    font-size: 16px;
-    /* padding: 3px 15px 3px 10px; */
-    border-radius: 20px 20px 20px 20px;
-}
-
-/* Still not sure how to get <p> inline with Header  */
-.aside-header {
-    width: 20%;
-    font-size: 24px;
-    text-align: right;
-    border-right:2px solid var(--dark-blue);
-    padding-inline: 15px;
 }
 
 #about-me {   
@@ -102,35 +138,16 @@ nav a {
     margin-top: 15px;
 }
 
-.main-content {
-    display:inline-block;
-    flex-wrap: wrap;
-    font-family: var(--font2);
-    width: 70%;
-    margin-left: 30%;
-    margin-bottom: 10%;
-    margin-top: -60%;
-   
+#name-box {
+    background-color: var(--grey);
+    font-size: 30px;
+    padding: 3px 15px 3px 10px;
+    border-radius: 20px 20px 20px 20px;
 }
-/* .main-content:after {
-    content:"";
-    position:absolute;
-    left:-10px;
-    right:-20px;
-    top:-5px;
-    bottom:-5px;
-    border-right:2px solid;
-    border-right-width:4px;
-  } */
 
-/* This did not format properly  */
-#work {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-bottom: 175px;
-    margin-top: 15px;
+#about-me-img {
+    height:150px;
+    width:150px;
 }
 
 #contact-me {
@@ -140,15 +157,15 @@ nav a {
         padding-bottom: 15px;
         padding-bottom: 175px;
         margin-top: 15px;
-    }
 }
 
+
 /* Not Working */
-.nav a:hover {
+/* .nav a:hover {
     color:var(--hot-pink);
     text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
     display:inline-block
-    }
+    } */
