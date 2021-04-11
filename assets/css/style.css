@@ -190,11 +190,11 @@ nav a {
 
 }
 
-#contact-me {
+/* #contact-me {
     display: flex;
     flex-wrap: wrap;
    margin-left: 20%;
-}
+} */
 
 a:hover {
     color:var(--hot-pink) ;
