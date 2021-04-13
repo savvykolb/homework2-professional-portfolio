@@ -15,7 +15,7 @@ THEN the UI scrolls to the corresponding section -->
 THEN the UI scrolls to a section with titled images of the developer's applications -->
 
 <!-- WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others--> **Not in grid flex box, but the image is bigger**
+THEN that application's image should be larger in size than the others-->
 
 <!-- WHEN I click on the images of the applications
 THEN I am taken to that deployed application --> ** Noah stated that we did not need to have this aspect because we have not real deployed sites yet**
